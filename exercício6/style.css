@@ -1,21 +1,20 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightslategray;
+    background-color: bisque;
     text-align: center;
     padding: 40px;
 }
 
 .container {
-    background: lightblue;
+    background: antiquewhite;
     max-width: 400px;
     margin: auto;
     padding: 12px;
-    box-shadow: 0 0 10px blue;
-    border-radius: 50px;
+    box-shadow: 0 0 10px brown;
 }
 
 h1 {
-    color: darkblue;
+    color: darkred;
 }
 
 label {
@@ -28,9 +27,9 @@ input {
     width: 90%;
     padding: 10px;
     border: none;
-    border-radius: 100px;
-    background-color: lightskyblue;
-    color: black;
+    border-radius: 8px;
+    background-color: #ff8400;
+    color: antiquewhite;
     cursor: pointer;
 }
 
@@ -46,17 +45,17 @@ button {
     border: 2px solid black;
     margin-top: 14px;
     cursor: pointer;
-    background: darkblue;
+    background: brown;
     color: bisque;
 }
 
 button:hover {
-    background-color: blue;
+    background-color: red;
 }
 
 #resultado {
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
-    color: darkblue;
+    color: darkred;
 }
