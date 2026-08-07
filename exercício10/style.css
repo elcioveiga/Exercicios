@@ -67,7 +67,7 @@ button.secundario {
 }
 
 button.secundario:hover {
-    background-color: red;
+    background-color: darkred;
 }
 
 #resultado {
