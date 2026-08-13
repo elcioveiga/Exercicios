@@ -182,23 +182,6 @@ button.secundario:hover {
   }
 }
 
-a {
-display: block;
-padding: 15px;
-background: whitesmoke;
-color: dodgerblue;
-text-decoration: none;
-border-radius: 5px;
-font-weight: bold;
-text-align: center;
-border: 1px solid lightgray;
-}
-
-a:hover {
-background: dodgerblue;
-color: white;
-}
-
 .btn-voltar {
     position: fixed;
     top: 15px;
