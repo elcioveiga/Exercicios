@@ -177,21 +177,6 @@ button.secundario:hover {
     .botões {
         grid-template-columns: 1fr;
     }
-}a {
-display: block;
-padding: 15px;
-background: whitesmoke;
-color: rgb(22, 103, 53);
-text-decoration: none;
-border-radius: 5px;
-font-weight: bold;
-text-align: center;
-border: 1px solid lightgray;
-}
-
-a:hover {
-background: rgb(22, 103, 53);;
-color: white;
 }
 
 .btn-voltar {
