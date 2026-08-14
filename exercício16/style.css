@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(40, 51, 86);
+    background: linear-gradient(135deg, rgb(243, 251, 255), rgb(247, 238, 255));
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+    padding: 32px;
+    background-color: rgba(0, 0, 255, 0.089);
+    border-radius: 16px;
+    box-shadow: 0 14px 35px rgba(47, 60, 90, 0.152);
+}
+
+.etiqueta {
+    display: inline-block;
+    padding: 6px 12px;
+    color: darkslateblue;
+    background-color: rgb(239, 239, 255);
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 14px 0 8px;
+    color: rgb(41, 35, 81);
+    text-align: center;
+}
+
+.introdução {
+    margin: 0;
+    color: rgb(54, 54, 54);
+    text-align: center;
+}
+
+.painel-array {
+    display: grid;
+    grid-template-columns: repeat();
+    gap: 12px;
+    margin: 28px 0;
+}
+
+.painel-array article {
+    padding: 18px;
+    border: 2px solid rgb(205, 197, 255);
+    border-radius: 12px;
+    background-color: rgb(242, 233, 255);
+}
+
+.painel-array span {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(94, 87, 104);
+    font-size: 14px;
+}
+
+.painel-array strong {
+    color: rgb(41, 35, 81);
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border: 2px solid rgb(165, 178, 187);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: darkslateblue;
+    outline: 3px solid rgba(37, 31, 71, 0.162);
+}
+
+.botões {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+button {
+    padding: 12px 14px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: darkslateblue;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(48, 41, 94);
+}
+
+button.secundario{
+    background-color: slategray;
+}
+
+button.secundario:hover {
+    background-color: rgb(72, 81, 98);
+}
+
+.mensagem {
+    min-height: 24px;
+    margin: 20px 0 0;
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+}
+
+.lista-container {
+    margin-top: 22px;
+    padding: 20px;
+    border-left: 5px solid darkslateblue;
+    border-radius: 10px;
+    background-color: rgb(243, 234, 255);
+}
+
+.lista-container h2 {
+    margin-top: 0;
+    color: rgb(41, 35, 81);
+}
+
+ol {
+    margin: 0;
+    padding-left: 30px;
+}
+
+li {
+    margin: 9px 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+li::marker {
+    color: darkslateblue;
+}
+
+li.vazio {
+    color: rgb(84, 87, 102);
+}
+
+@media (max-width: 680px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .container {
+        padding: 22px;
+    }
+
+    .painel-array,
+    .botões {
+        grid-template-columns: 1fr;
+    }
+}
+
+.btn-voltar {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 9999;
+    padding: 10px 18px;
+    background-color: darkslateblue;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-voltar:hover {
+    background-color: rgb(48, 41, 94);
+}
