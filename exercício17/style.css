@@ -1,0 +1,134 @@
+:root {
+    color-scheme: dark;
+    --fundo: #0d1117;
+    --painel: #161b22;
+    --borda: #30363d;
+    --texto: #e6edf3;
+    --suave: #8b949e;
+    --destaque: #58a6ff;
+    --sucesso: #3fb950;
+    --perigo: #f85149;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+}
+
+main {
+    width: min(820px, 92%);
+    margin: 0 auto;
+    padding: 36px 0;
+}
+
+section {
+    background: var(--painel);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: 22px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+p {
+    color: var(--suave);
+    line-height: 1.55;
+}
+
+input, button, select {
+    min-height: 44px;
+    border-radius: 9px;
+    font: inherit;
+}
+
+input, select {
+    width: 100%;
+    padding: 9px 11px;
+    margin: 6px 0 12px;
+    color: var(--texto);
+    background: #0d1117;
+}
+
+button {
+    padding: 9px 15px;
+    border: 0;
+    background: var(--destaque);
+    color: #0d1117;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button.secundario {
+    background: #30363d;
+    color: var(--texto);
+}
+
+button.perigo {
+    background: var(--perigo);
+    color: white;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+.linha {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cartao {
+    padding: 14px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.mensagem {
+    min-height: 24px;
+    color: var(--suave);
+}
+
+.destaque {
+    border-color: var(--destaque);
+    box-shadow: 0 0 2px rgba(88, 166, 255, .2);
+}
+
+@media (max-width: 620px) {
+    main {
+        padding-top: 20px;
+    }
+
+    .linha > * {
+        width: 100%;
+    }
+}
+
+.btn-voltar {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 9999;
+    padding: 10px 18px;
+    background-color: #58a6ff94;
+    color: #161b22;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-voltar:hover {
+    background-color: #58a6ff;
+}
