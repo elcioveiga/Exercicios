@@ -8,7 +8,15 @@
 </head>
 <body>
     <h1>Menu de Exercícios</h1>
-
+    
+    <div class="search-container">
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Buscar por número ou nome..." 
+            oninput="filtrarExercicios()">
+    </div>
+    
     <ul>
 
         <li><a href="exercício01">Exercício 01</a></li>
@@ -34,5 +42,7 @@
 
     </ul>
     
+    <script src="script.js"></script>
+
 </body>
 </html>
